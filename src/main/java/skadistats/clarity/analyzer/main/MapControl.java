@@ -20,10 +20,10 @@ import java.util.List;
 
 public class MapControl extends Pane implements ListChangeListener<ObservableEntity> {
 
-    public static final double MIN_X = -7500;
-    public static final double MAX_X = 7500;
-    public static final double MIN_Y = -7400;
-    public static final double MAX_Y = 7200;
+    public static final double MIN_X = -8507.4;
+    public static final double MAX_X = 9515;
+    public static final double MIN_Y = -8888.12001679;
+    public static final double MAX_Y = 8953.45782627;
 
     private final Image mapImage;
     private final ImageView background;
@@ -32,7 +32,7 @@ public class MapControl extends Pane implements ListChangeListener<ObservableEnt
     private EntityIcon[] mapEntities;
 
     public MapControl() {
-        mapImage = new Image(getClass().getResourceAsStream("/images/minimap_686.jpg"));
+        mapImage = new Image(getClass().getResourceAsStream("/images/map_706.jpg"));
 
         double scale = getSize() / mapImage.getWidth();
         background = new ImageView(mapImage);
